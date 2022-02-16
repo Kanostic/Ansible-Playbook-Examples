@@ -1,0 +1,10 @@
+- name: Yum List
+  hosts: all
+  tasks:
+    - name: Get a list of yum updates
+      yum:
+        list: updates
+      register: result
+     
+    - debug:
+        var: result
