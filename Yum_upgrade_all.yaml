@@ -1,3 +1,6 @@
+- name: Yum List
+  hosts: all
+  tasks:
   - name: upgrade all packages (full)
     yum:
       name: '*'
